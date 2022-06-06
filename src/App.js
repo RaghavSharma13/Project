@@ -10,8 +10,8 @@ const useStyles = makeStyles({
   App: {
     backgroundColor: "#14161a",
     color: "white",
-    minHeight: "100vh"
-  }
+    minHeight: "100vh",
+  },
 });
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
       <div className={classes.App}>
         <Header />
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
           <Route path="/coins/:id" element={<CoinPage />} />
+          <Route path="" element={<HomePage />} />
         </Routes>
       </div>
     </Router>
