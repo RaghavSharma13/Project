@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 
 function App() {
   const classes = useStyles();
-
+  console.log("App");
   return (
     <Router>
       <div className={classes.App}>
